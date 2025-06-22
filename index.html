@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vending-machine.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D & M Vending</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      header {
+        background-color: #f8f8f8;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .header-content {
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin: 0 auto;
+      }
+
+      .contact-info {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+      }
+
+      main {
+        width: clamp(200px, 100%, 1200px);
+        margin: 0 auto;
+        flex: 1;
+        padding: 20px;
+      }
+
+      .contact-info a .icon {
+        text-decoration-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <span>D & M Vending</span>
+        <ul class="contact-info">
+          <li>
+            <span class="icon">📞</span>
+            <a href="tel:+11111111"> 111-111-1111</a>
+          </li>
+          <li>
+            <span class="icon" alt="Email">✉️</span>
+            <a href="mailto:info@dmvending.com">info@dmvending.com</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1>Welcome to D & M Vending</h1>
+      <p>Your one-stop solution for all vending machine needs.</p>
+    </main>
+    <footer>
+      Favicon by <a href=" https://www.vectorportal.com">Vectorportal.com</a>,
+      <a
+        class="external text"
+        href="https://creativecommons.org/licenses/by/4.0/"
+        >CC BY</a
+      >
+    </footer>
+  </body>
+</html>
