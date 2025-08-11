@@ -13,6 +13,8 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "@vercel/analytics": "^1.5.0"
+    "@alpinejs/resize": "^3.14.9",
+    "@vercel/analytics": "^1.5.0",
+    "alpinejs": "^3.14.9"
   }
 }
