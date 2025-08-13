@@ -28,8 +28,8 @@ const david = {
   },
 };
 
-const molly = {
-  name: "Molly",
+const mollie = {
+  name: "Mollie",
   phone: {
     value: "6163043275",
     get formatted() {
@@ -40,7 +40,7 @@ const molly = {
 
 Alpine.data("app", () => ({
   david,
-  molly,
+  mollie,
 }));
 
 Alpine.start();
