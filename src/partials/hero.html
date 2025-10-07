@@ -1,0 +1,41 @@
+<div class="hero">
+  <img src="5669730793757376659.jpg" alt="Vending machines" />
+  <div class="hero-overlay">
+    <h2>Worry-free Refreshments for Your Business</h2>
+  </div>
+</div>
+
+<style>
+  .hero {
+    position: relative;
+    width: 100%;
+    height: clamp(300px, 50vh, 600px);
+    overflow: hidden;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    padding: var(--spacing-md);
+    color: white;
+  }
+
+  .hero-overlay h2 {
+    color: white;
+    margin: 0;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 clamp(1rem, 3vw, 2rem);
+  }
+</style>

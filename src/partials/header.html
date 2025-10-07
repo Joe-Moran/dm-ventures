@@ -1,0 +1,33 @@
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header x-data="{width: 0}" x-resize="width = $width">
+  <div class="header-content">
+    <div>
+      <h1 class="name"><b>Vending Services</b> by D&M Ventures</h1>
+    </div>
+    <ul class="contact-info">
+      <template x-for="person in [david, mollie]">
+        <li>
+          <template x-if="width >= 420">
+            <div class="contact-item">
+              <span class="icon">📞</span>
+              <span x-text="person.name"></span>:
+              <a
+                :href="`tel:${person.phone.value}`"
+                x-text="person.phone.formatted"
+              ></a>
+            </div>
+          </template>
+          <template x-if="width < 420">
+            <div class="contact-item-compact">
+              <span class="icon">📞</span>
+              <a
+                :href="`tel:${person.phone.value}`"
+                x-text="`Call ${person.name}`"
+              ></a>
+            </div>
+          </template>
+        </li>
+      </template>
+    </ul>
+  </div>
+</header>

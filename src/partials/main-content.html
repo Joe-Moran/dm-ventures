@@ -1,0 +1,57 @@
+<main id="main-content">
+  <!-- Hero Section -->
+  {{> hero}}
+
+  <div class="content-wrapper">
+    <!-- Introduction Section -->
+    <section class="intro-section">
+      <h2>Full-Service Vending Solutions</h2>
+      <p>
+        We provide snack and soda machines on site, either with or without
+        credit card readers. We set up, stock, and service our machines at no
+        cost to you, allowing you worry-free refreshment options.
+      </p>
+    </section>
+
+    {{> gallery-1}} {{> owners-section}}
+
+    <!-- Service Area Section -->
+    <section class="service-area-section">
+      <h2>Serving West Michigan</h2>
+      <p class="service-area-text">
+        We proudly serve the greater Grand Rapids, Kalamazoo, and Battle Creek
+        areas of Michigan
+      </p>
+      <div id="map" x-leaflet></div>
+    </section>
+
+    <!-- Additional Gallery Images -->
+    <section class="gallery gallery-secondary">
+      <div class="gallery-item">
+        <img src="4699417258379265808.jpg" alt="Vending machine" />
+      </div>
+      <div class="gallery-item">
+        <img src="4991907823059747615.jpg" alt="Vending machine display" />
+      </div>
+      <div class="gallery-item">
+        <img src="6109884601277098561.jpg" alt="Product selection" />
+      </div>
+      <div class="gallery-item">
+        <img src="6369986631440398547.jpg" alt="Vending services" />
+      </div>
+      <div class="gallery-item">
+        <img src="8450993556637176767.jpg" alt="Quality vending machines" />
+      </div>
+    </section>
+
+    <p class="tagline">Because who doesn't love a snack?</p>
+  </div>
+</main>
+
+<style>
+  .content-wrapper {
+    max-width: var(--max-width);
+    padding: 0 clamp(1rem, 3vw, 2rem);
+    margin: var(--spacing-lg) auto 0;
+  }
+</style>

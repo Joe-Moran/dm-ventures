@@ -10,11 +10,13 @@
   },
   "devDependencies": {
     "@nickreese/seo-lint": "^1.1.2",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vite-plugin-handlebars": "^2.0.0"
   },
   "dependencies": {
     "@alpinejs/resize": "^3.14.9",
     "@vercel/analytics": "^1.5.0",
-    "alpinejs": "^3.14.9"
+    "alpinejs": "^3.14.9",
+    "leaflet": "^1.9.4"
   }
 }
